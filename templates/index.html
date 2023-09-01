@@ -1,0 +1,16 @@
+<!Doctype html>
+<head>
+<title>
+Basic sentiment analysis
+</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Input your Text</h1>
+    <form action='/submit' method='post'>
+        <label for="textArea">Enter your text:</label><br>
+        <textarea id="textArea" name="textArea" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
