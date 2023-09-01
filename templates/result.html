@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head>
+    <title>Sentiment Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/result.css') }}">
+</head>
+<body>
+    <h1>Sentiment Analysis Result</h1>
+    <h2>{{ sentiment }}</h2>
+    <img src="{{ url_for('static', filename='plot.png') }}" alt="Sentiment Plot">
+</body>
+</html>
